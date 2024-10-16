@@ -9,5 +9,19 @@ import "../styles/index.css";
 import Home from "./component/home.jsx";
 
 //render your react application
-ReactDOM.createRoot(document.getElementById('app')).render(<Home/>);
+
+let counter = 0; 
+
+setInterval(function(){ const four = Math.floor(counter/1000); 
+                        const three = Math.floor(counter/100);
+                        const two = Math.floor(counter/10); 
+                        const one = Math.floor(counter/1); 
+                        console.log(four, three, two, one); //render your react application
+                        
+                        ReactDOM.createRoot(document.getElementById('app')).render(<Home one={one} two={two} three={three} four={four}/>);
+                        
+                        counter++;},1000);
+
+
+
 
