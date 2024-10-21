@@ -10,3 +10,19 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.row {
+    background-color: black;
+}
+.card {
+    border-color: gray;
+    color:white;
+    background-color: black;
+    width: 100px;
+    height :150px;
+    
+    padding: 10px;
+    margin: 15px
+}
+.card-title {
+    font-size: 90px;
+}

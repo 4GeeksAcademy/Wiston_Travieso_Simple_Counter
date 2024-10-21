@@ -9,13 +9,15 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 
 
-const Home = ({ one, two, three, four }) => {
+const Home = ({ one, two, three, four, five, six }) => {
 
 	let digits = [
-		{ title: four },
-		{ title: three },
-		{ title: two },
-		{ title: one }
+		{ title: six % 10},
+		{ title: five % 10 },
+		{ title: four % 10},
+		{ title: three % 10 },
+		{ title: two % 10 },
+		{ title: one % 10 }
 		
 	]
 	return (
